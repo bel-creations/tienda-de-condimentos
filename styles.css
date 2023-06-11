@@ -1,0 +1,287 @@
+
+
+:root {
+    --fondo-principal: rgb(0, 0, 0);
+    --fondo-secundario: #fdf8ed;
+    --color-principal: #EDE8DB;
+    --color-secundario: #000000;
+    --title-size: 5.5rem;
+    --paragraph-size: 2rem;
+}
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-weight: 500;
+    font-size: var(--title-size);
+    /*text-transform: uppercase;*/
+    padding-bottom: 1.5rem;
+}
+
+h2 {
+    font-weight: 300;
+    margin: 0;
+    /*text-transform: uppercase;*/
+
+}
+
+p {
+    font-weight: 300;
+    font-size: var(--paragraph-size);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    background-color: #EDE8DB;
+    color: var(--color-secundario);
+    position: fixed;
+    z-index: 2;
+}
+
+.menu-navegacion {
+    width: 95vw;
+    height: 12vh;
+    margin-right: 1rem;
+    background-color: #EDE8DB;
+    color: var(--color-secundario);
+    padding: auto auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+a{
+    padding: 1rem 1rem;
+    background-color: var(#EDE8DB);
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 1.2rem;
+    align-self: center;
+    text-align: start;
+    
+}
+
+.subtitulo {
+    padding: 3rem 0rem 3rem 4rem; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+/*Contenedor*/ 
+
+.contenedor{
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 3rem 3rem 2rem 3rem;
+    width: 100%;
+
+}
+
+
+/*Inicio*/
+
+.portada {
+    color: var(--color-principal);
+    background-color: var(--fondo-principal);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+
+
+.texto-portada {
+    
+    margin: 0rem;
+    padding: 0rem 0rem 0rem 2rem;
+    width: 40vw;
+    align-self: center;
+    z-index: 1;
+}
+
+.imagen-portada {
+    margin: 0;
+    padding: 0rem 0rem 0rem 0rem;
+    width: 45vw;
+    height: 90%;
+    /*position: absolute;
+    align-self: flex-end;
+    align-items: center;*/
+}
+
+.img-portada {
+    margin: 0;
+    padding: 0.5rem 0rem 0rem 0rem;
+    width: 400px;
+    min-width: 350px;
+    max-height: 500px;
+    float: right;
+    /*position: absolute;
+    right: 0px;
+    bottom: 0px;*/
+    z-index: 0;
+
+}
+
+
+/* Quiénes somos*/
+
+
+.quienes-somos {
+
+    background-color: var(--fondo-secundario);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cuerpo-quienes-somos{
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.titulo-quienes-somos{
+    background-color: var(--fondo-secundario);
+    color: var(--color-secundario);    
+}
+
+.imagen-quienes-somos{
+    /*padding: 0rem 0rem 2rem 3.7rem;*/
+    width: 50%;
+
+}
+
+.img-quienes-somos {
+    width: 250px;
+    /*height: auto;*/
+    border-radius: 10px;
+}
+
+.texto-quienes-somos{
+    width: 50%;
+}
+
+.texto-quienes-somos p{
+    margin: 0;
+    /*padding: 0 2rem;*/
+}
+
+/*Nuestros productos*/
+
+.nuestros-productos {
+    background-color: #ffffff;
+    color: var(--color-secundario);
+    padding-bottom: 4rem;
+}
+
+.titulo-productos{
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0rem 1.5rem 0rem;
+    font-size: 2rem;
+}
+
+.imagenes-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.img-productos{
+    width: 230px;
+    border-radius: 10px;
+}
+
+.img-productos:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+
+/*Contacto*/
+
+.contacto{
+    padding: 2rem 0rem 4rem 2rem;
+    background-color: var(--fondo-principal);
+    color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-contacto {
+    padding-left: 6rem;
+    /*position: absolute;
+    right: 8rem;*/
+}
+
+.cuerpo-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.imagen-contacto{
+    width: 40%;
+    padding: 2rem 3rem 0rem 1rem;
+}
+
+.img-contacto{
+    padding: 0;
+    width: 100%;
+}
+
+
+.texto-contacto{
+    width: 30%;
+    padding: 0rem 3rem 1rem 0rem;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: auto;
+}
+
+.texto-contacto > p{
+    margin: 1rem;
+}
+
+.texto-contacto > p:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .texto-quienes-somos p{
+        font-size: 1.5rem;
+    }
+
+    .img-productos{
+        width: 200px;
+    }
+
+}
+
